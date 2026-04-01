@@ -1,3 +1,5 @@
+Thomas Speer |
+Paulina Gonzalez-Brito | UFID: 14734443
 Programming Assignment: Highest Value Longest
 Common Sequence
 Collaboration policy

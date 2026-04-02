@@ -13,7 +13,7 @@ subsequence itself.
 Question 1: Empirical Comparison
 Use at least 10 nontrivial input files (i.e., contain strings of length at least 25). Graph the
 runtime of the 10 files.
-![](https://github.com/ThomasSpeer252/Programming-Assignment-3/plot.png)
+![](https://github.com/ThomasSpeer252/Programming-Assignment-3/blob/main/plot.PNG)
 --
 Question 2: Recurrence Equation
 Give a recurrence that is the basis of a dynamic programming algorithm to compute the

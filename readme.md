@@ -1,17 +1,10 @@
---
 Thomas Speer | UFID: 80978847
 --
-
 Paulina Gonzalez-Brito | UFID: 14734443
 --
-Programming Assignment: Highest Value Longest
-Common Sequence
-Collaboration policy
-Work in teams of two or alone. Both partners must contribute meaningfully and understand
-the full solution. Both partners need to do three meaningful github commits to
-the codebase. You can able to use any programming language, and standard libraries for
-parsing and I/O.
-Problem Statement
+##Programming Assignment: Highest Value Longest Common Sequence
+--
+#Problem Statement
 You are given two strings A and B over a fixed alphabet. Each character in the alphabet has
 a nonnegative integer value. Your task is to compute a common subsequence of A and B that
 maximizes the total value, and to output both this maximum value and the corresponding

@@ -2,7 +2,7 @@ Thomas Speer | UFID: 80978847
 --
 Paulina Gonzalez-Brito | UFID: 14734443
 --
-##Programming Assignment: Highest Value Longest Common Sequence
+Programming Assignment: Highest Value Longest Common Sequence
 --
 #Problem Statement
 You are given two strings A and B over a fixed alphabet. Each character in the alphabet has

@@ -42,37 +42,40 @@ OPT(i,j) = | max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i]
 Give pseudocode of an algorithm to compute the length of the HVLCS of given strings A
 and B. What is the runtime of your algorithm?<br><br>
 
-<strong>Pseudocode:</strong><br><br>
-// Initiate both sequences <br>
-HVLCS(A, B):<br>
-n = length(A)</br>
-m = length(B)<br><br>
+<strong>Pseudocode:</strong><br>
+<pre>
+// Initiate both sequences 
+HVLCS(A, B):
+    n = length(A)
+    m = length(B)
+    
+    // Handle Base Case/Initialize table
+    for i = 0 to n:
+        OPT[i][0] = 0
 
-// Handle Base Case/Initialize table<br>
-for i = 0 to n:<br>
-          OPT[i][0] = 0<br><br>
-</br>
-for j = 0 to m:
-</br>
-->OPT[0][j] = 0
-</br></br>
-// Fill table
-</br>
-for i = 1 to n:
-</br>
-->for j = 1 to m:
-</br>
-->->if A[i] == B[j]:
-</br>
-                              OPT[i][j] = max (OPT[i-1][j], OPT[i][j-1], OPT[i-1][j-1] + V(A[i]))
-</br>
-                    else:
-</br>
-                              OPT[i][j] = max(OPT[i-1][j], OPT[i][j-1])
-</br>
-return OPT[n][m]
+    for j = 0 to m:
+        OPT[0][j] = 0
 
-</br></br>
-Runtime:
-</br>
+    // Fill table
+    for i = 1 to n:
+        for j = 1 to m:
+
+            if A[i] == B[j]:
+                OPT[i][j] = max(
+                    OPT[i-1][j],
+                    OPT[i][j-1],
+                    OPT[i-1][j-1] + V(A[i])
+                )
+            else:
+                OPT[i][j] = max(
+                    OPT[i-1][j],
+                    OPT[i][j-1]
+                )
+
+    return OPT[n][m]
+</pre>
+
+<br>
+
+<strong>Runtime:</strong><br>
 Table is made up of n x m cells, where each cell takes O(1) time to compute. However, each computation is done n times. Therefore, the final runtime is O(n x m).

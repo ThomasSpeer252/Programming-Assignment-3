@@ -44,16 +44,16 @@ Give pseudocode of an algorithm to compute the length of the HVLCS of given stri
 and B. What is the runtime of your algorithm?
 </br>
 Pseudocode:
-</br>
+</br></br>
 // Initiate both sequences 
 </br>
 HVLCS(A, B):
-</br>
+</br></br>
 n = length(A)
 </br>
 m = length(B)
 
-</br>
+</br></br>
 // Handle Base Case/Initialize table
 </br>
 for i = 0 to n:
@@ -63,16 +63,24 @@ for i = 0 to n:
 for j = 0 to m:
 </br>
           OPT[0][j] = 0
-
+</br></br>
 // Fill table
+</br>
 for i = 1 to n:
+</br>
           for j = 1 to m:
+</br>
                     if A[i] == B[j]:
+</br>
                               OPT[i][j] = max (OPT[i-1][j], OPT[i][j-1], OPT[i-1][j-1] + V(A[i]))
+</br>
                     else:
+</br>
                               OPT[i][j] = max(OPT[i-1][j], OPT[i][j-1])
+</br>
 return OPT[n][m]
 
-</br>
+</br></br>
 Runtime:
+</br>
 Table is made up of n x m cells, where each cell takes O(1) time to compute. However, each computation is done n times. Therefore, the final runtime is O(n x m).

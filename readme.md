@@ -8,8 +8,10 @@ Programming Assignment: Highest Value Longest Common Sequence
 Compile Program<br>
 g++ src/hvlcs.cpp -o hvlcs
 
-<strong>Test using provided testfiles</strong><br>
-./hvlcs < test/1.in
+<strong>Test using provided testfiles (Windows/Powershell)</strong><br>
+Get-Content .\testfiles\1.in | .\hvlcs.exe<br>
+<strong>Other Command Option</strong><br>
+./hvlcs < testfiles/1.in
 
 <strong>Output</strong><br>
 max value<br>

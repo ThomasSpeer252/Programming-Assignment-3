@@ -19,6 +19,25 @@ Question 2: Recurrence Equation
 Give a recurrence that is the basis of a dynamic programming algorithm to compute the
 HVLCS of strings A and B. You must provide the appropriate base cases, and explain why
 your recurrence is correct.
+</br>
+A[1...i] = first i items of A</br>
+B[1...j] = first j items of B</br>
+</br>
+Base Case: i=0 or j=0</br>
+->OPT(i,j) = 0</br>
+</br>
+Case 1: A[i] = B[j]</br>
+->OPT(i,j) = max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + V(A[i])}</br>
+</br>
+Case 2: A[i] != B[j]</br>
+->OPT(i,j) = max{OPT(i-1, j), OPT(i, j-1)}</br>
+</br>
+Therefore the Recurrence Equation is:</br>
+          </br>
+           |  0                                                            i=0 or j=0</br>
+OPT(i,j) = |max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i] = B[j]</br>
+           |max{OPT(i-1, j), OPT(i, j-1)}                                  A[i] != B[j]</br>
+           </br>
 --
 Question 3: Big-Oh
 Give pseudocode of an algorithm to compute the length of the HVLCS of given strings A

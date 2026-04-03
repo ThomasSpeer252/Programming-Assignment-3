@@ -4,6 +4,18 @@ Paulina Gonzalez-Brito | UFID: 14734443
 --
 Programming Assignment: Highest Value Longest Common Sequence
 --
+<strong>Usage Guide</strong><br>
+Compile Program<br>
+g++ src/hvlcs.cpp -o hvlcs
+
+<strong>Test using provided testfiles</strong><br>
+./hvlcs < test/1.in
+
+<strong>Output</strong><br>
+max value<br>
+one optimal common subsequence that achieves this value<br>
+
+
 Problem Statement
 You are given two strings A and B over a fixed alphabet. Each character in the alphabet has
 a nonnegative integer value. Your task is to compute a common subsequence of A and B that

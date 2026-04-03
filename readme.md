@@ -48,7 +48,7 @@ Pseudocode:
 // Initiate both sequences 
 </br>
 HVLCS(A, B):
-</br></br>
+</br>
 n = length(A)
 </br>
 m = length(B)
@@ -58,19 +58,19 @@ m = length(B)
 </br>
 for i = 0 to n:
 </br>
-          OPT[i][0] = 0
+->OPT[i][0] = 0
 </br>
 for j = 0 to m:
 </br>
-          OPT[0][j] = 0
+->OPT[0][j] = 0
 </br></br>
 // Fill table
 </br>
 for i = 1 to n:
 </br>
-          for j = 1 to m:
+->for j = 1 to m:
 </br>
-                    if A[i] == B[j]:
+->->if A[i] == B[j]:
 </br>
                               OPT[i][j] = max (OPT[i-1][j], OPT[i][j-1], OPT[i-1][j-1] + V(A[i]))
 </br>

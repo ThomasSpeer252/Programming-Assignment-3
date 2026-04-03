@@ -42,4 +42,28 @@ OPT(i,j) = | max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i]
 Question 3: Big-Oh
 Give pseudocode of an algorithm to compute the length of the HVLCS of given strings A
 and B. What is the runtime of your algorithm?
+</br>
+Pseudocode:
+// Initiate both sequences 
+HVLCS(A, B):
+n = length(A)
+m = length(B)
 
+// Handle Base Case/Initialize table
+for i = 0 to n:
+          OPT[i][0] = 0
+for j = 0 to m:
+          OPT[0][j] = 0
+
+// Fill table
+for i = 1 to n:
+          for j = 1 to m:
+                    if A[i] == B[j]:
+                              OPT[i][j] = max (OPT[i-1][j], OPT[i][j-1], OPT[i-1][j-1] + V(A[i]))
+                    else:
+                              OPT[i][j] = max(OPT[i-1][j], OPT[i][j-1])
+return OPT[n][m]
+
+</br>
+Runtime:
+Table is made up of n x m cells, where each cell takes O(1) time to compute. However, each computation is done n times. Therefore, the final runtime is O(n x m).

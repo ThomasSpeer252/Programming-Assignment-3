@@ -12,7 +12,7 @@ subsequence itself.
 
 <strong>Question 1: Empirical Comparison</strong>
 Use at least 10 nontrivial input files (i.e., contain strings of length at least 25). Graph the
-runtime of the 10 files.
+runtime of the 10 files.</br>
 ![](https://github.com/ThomasSpeer252/Programming-Assignment-3/blob/main/plot.PNG)
 
 <strong>Question 2: Recurrence Equation</strong>

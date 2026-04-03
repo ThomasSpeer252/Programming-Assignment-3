@@ -38,27 +38,19 @@ Therefore the Recurrence Equation is:</br>
 OPT(i,j) = | max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i] = B[j]</br>
            | max{OPT(i-1, j), OPT(i, j-1)}                                  A[i] != B[j]</pre></br>
           
-</br>
-Question 3: Big-Oh
+<strong>Question 3: Big-Oh</strong><br>
 Give pseudocode of an algorithm to compute the length of the HVLCS of given strings A
-and B. What is the runtime of your algorithm?
-</br>
-Pseudocode:
-</br></br>
-// Initiate both sequences 
-</br>
-HVLCS(A, B):
-</br>
-n = length(A)
-</br>
-m = length(B)
+and B. What is the runtime of your algorithm?<br><br>
 
-</br></br>
-// Handle Base Case/Initialize table
-</br>
-for i = 0 to n:
-</br>
-->OPT[i][0] = 0
+<strong>Pseudocode:</strong><br><br>
+// Initiate both sequences <br>
+HVLCS(A, B):<br>
+n = length(A)</br>
+m = length(B)<br><br>
+
+// Handle Base Case/Initialize table<br>
+for i = 0 to n:<br>
+          OPT[i][0] = 0<br><br>
 </br>
 for j = 0 to m:
 </br>

@@ -90,4 +90,4 @@ HVLCS(A, B):
 <br>
 
 <strong>Runtime:</strong><br>
-Table is made up of n x m cells, where each cell takes O(1) time to compute. However, each computation is done n times. Therefore, the final runtime is O(n x m).
+The table we are filling is of size n × m. Each cell takes O(1) time since it only does a constant number of comparisons and max operations. Therefore, the total runtime is O(n x m).

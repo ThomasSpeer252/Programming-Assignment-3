@@ -34,9 +34,9 @@ Case 2: A[i] != B[j]</br>
 </br>
 Therefore the Recurrence Equation is:</br>
           </br>
-<pre>           |  0                                                            i=0 or j=0</br>
-OPT(i,j) = |max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i] = B[j]</br>
-           |max{OPT(i-1, j), OPT(i, j-1)}                                  A[i] != B[j]</pre></br>
+<pre>           | 0                                                            i=0 or j=0</br>
+OPT(i,j) = | max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i] = B[j]</br>
+           | max{OPT(i-1, j), OPT(i, j-1)}                                  A[i] != B[j]</pre></br>
           
 </br>
 Question 3: Big-Oh

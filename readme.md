@@ -44,15 +44,24 @@ Give pseudocode of an algorithm to compute the length of the HVLCS of given stri
 and B. What is the runtime of your algorithm?
 </br>
 Pseudocode:
+</br>
 // Initiate both sequences 
+</br>
 HVLCS(A, B):
+</br>
 n = length(A)
+</br>
 m = length(B)
 
+</br>
 // Handle Base Case/Initialize table
+</br>
 for i = 0 to n:
+</br>
           OPT[i][0] = 0
+</br>
 for j = 0 to m:
+</br>
           OPT[0][j] = 0
 
 // Fill table

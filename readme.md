@@ -37,8 +37,8 @@ Therefore the Recurrence Equation is:</br>
 <pre>           |  0                                                            i=0 or j=0</br>
 OPT(i,j) = |max{OPT(i-1, j), OPT(i, j-1), OPT(i-1, j-1) + v(A[i])}         A[i] = B[j]</br>
           |max{OPT(i-1, j), OPT(i, j-1)}                                  A[i] != B[j]</pre></br>
-           </br>
-
+          
+</br>
 Question 3: Big-Oh
 Give pseudocode of an algorithm to compute the length of the HVLCS of given strings A
 and B. What is the runtime of your algorithm?

@@ -19,7 +19,7 @@ runtime of the 10 files.</br>
 Give a recurrence that is the basis of a dynamic programming algorithm to compute the
 HVLCS of strings A and B. You must provide the appropriate base cases, and explain why
 your recurrence is correct.
-</br>
+</br></br>
 A[1...i] = first i items of A</br>
 B[1...j] = first j items of B</br>
 </br>
